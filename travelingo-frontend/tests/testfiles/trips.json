@@ -1,0 +1,36 @@
+[
+  {
+    "country": "JAPAN",
+    "startDate": "2023-07-14T00:00:00",
+    "endDate": "2023-08-07T00:00:00",
+    "locations": [
+      {
+        "place": "Tokyo",
+        "from": "2023-07-14T00:00:00",
+        "until": "2023-07-26T00:00:00"
+      },
+      {
+        "place": "Osaka",
+        "from": "2023-07-26T00:00:00",
+        "until": "2023-08-03T00:00:00"
+      },
+      {
+        "place": "Hiroshima",
+        "from": "2023-08-03T00:00:00",
+        "until": "2023-08-07T00:00:00"
+      }
+    ]
+  },
+  {
+    "country": "USA",
+    "startDate": "2022-10-03T00:00:00",
+    "endDate": "2022-10-23T00:00:00",
+    "locations": [
+      {
+        "place": "San Francisco, CA",
+        "from": "2023-10-03T00:00:00",
+        "until": "2023-10-23T00:00:00"
+      }
+    ]
+  }
+]

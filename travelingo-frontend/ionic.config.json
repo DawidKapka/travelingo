@@ -1,0 +1,7 @@
+{
+  "name": "travelingo-frontend",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}

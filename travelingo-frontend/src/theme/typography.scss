@@ -1,0 +1,81 @@
+@import "./colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+@mixin text-light {
+  color: $color-white;
+  font-family: 'Inter', sans-serif;
+}
+
+@mixin text-light-transparent {
+  color: $color-white-025;
+  font-family: 'Inter', sans-serif;
+}
+
+@mixin text-dark {
+  color: $color-black;
+}
+
+@mixin text-dark-transparent {
+  color: $color-black-025;
+  font-family: 'Inter', sans-serif;
+}
+
+@mixin header-1-light {
+  @include text-light;
+  margin: 0;
+  font-size: 64px;
+}
+
+@mixin header-1-dark {
+  @include text-dark;
+  margin: 0;
+  font-size: 64px;
+}
+
+@mixin header-2-light {
+  @include text-light;
+  margin: 0;
+  font-size: 32px;
+}
+
+@mixin header-2-dark {
+  @include text-dark;
+  margin: 0;
+  font-size: 32px;
+}
+
+@mixin header-3-light {
+  @include text-light;
+  margin: 0;
+  font-size: 32px;
+}
+
+@mixin header-3-dark {
+ @include text-dark;
+  margin: 0;
+  font-size: 32px;
+}
+
+@mixin header-4-light {
+  @include text-light;
+  margin: 0;
+  font-size: 20px;
+}
+
+@mixin header-4-dark {
+  @include text-dark;
+  margin: 0;
+  font-size: 20px;
+}
+
+@mixin subtitle-light {
+  @include text-light-transparent;
+  margin: 0;
+  font-size: 14px;
+}
+
+@mixin subtitle-dark {
+  @include text-dark-transparent;
+  margin: 0;
+  font-size: 14px;
+}

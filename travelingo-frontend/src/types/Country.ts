@@ -1,4 +1,5 @@
 export enum Country {
     JAPAN = 'Japan',
-    USA = 'USA'
+    USA = 'USA',
+    SOUTHKOREA = 'South Korea',
 }

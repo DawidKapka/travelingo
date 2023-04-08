@@ -12,7 +12,8 @@
             <tr-button
                 :color="buttonColor.LIGHT"
                 :size="buttonSize.BIG"
-                :type="buttonType.FLAT">
+                :type="buttonType.FLAT"
+                @click="openCurrentTrip()">
               Continue
             </tr-button>
           </div>
@@ -42,6 +43,11 @@ export default {
       buttonColor: ButtonColor,
       buttonType: ButtonType,
       buttonSize: ButtonSize,
+    }
+  },
+  methods: {
+    openCurrentTrip() {
+      this.$router.push({path: '/trip', query: {id: 'current'}});
     }
   }
 }

@@ -7,3 +7,9 @@ export interface Trip {
     endDate: Date,
     locations: Location[]
 }
+
+export enum TripStatus {
+    ONGOING,
+    PAST,
+    UPCOMING
+}

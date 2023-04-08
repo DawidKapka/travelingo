@@ -12,6 +12,7 @@
 }
 
 @mixin text-dark {
+  font-family: 'Inter', sans-serif;
   color: $color-black;
 }
 
@@ -35,13 +36,13 @@
 @mixin header-2-light {
   @include text-light;
   margin: 0;
-  font-size: 32px;
+  font-size: 48px;
 }
 
 @mixin header-2-dark {
   @include text-dark;
   margin: 0;
-  font-size: 32px;
+  font-size: 48px;
 }
 
 @mixin header-3-light {
@@ -51,7 +52,7 @@
 }
 
 @mixin header-3-dark {
- @include text-dark;
+  @include text-dark;
   margin: 0;
   font-size: 32px;
 }
@@ -59,10 +60,22 @@
 @mixin header-4-light {
   @include text-light;
   margin: 0;
-  font-size: 20px;
+  font-size: 32px;
 }
 
 @mixin header-4-dark {
+ @include text-dark;
+  margin: 0;
+  font-size: 32px;
+}
+
+@mixin header-5-light {
+  @include text-light;
+  margin: 0;
+  font-size: 20px;
+}
+
+@mixin header-5-dark {
   @include text-dark;
   margin: 0;
   font-size: 20px;
@@ -78,4 +91,16 @@
   @include text-dark-transparent;
   margin: 0;
   font-size: 14px;
+}
+
+@mixin subtitle-mini-light {
+  @include text-light-transparent;
+  margin: 0;
+  font-size: 12px;
+}
+
+@mixin subtitle-mini-dark {
+  @include text-dark-transparent;
+  margin: 0;
+  font-size: 12px;
 }

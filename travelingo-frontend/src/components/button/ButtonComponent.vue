@@ -1,5 +1,5 @@
 <template>
-  <button :class="{
+  <button @click="click()" :class="{
     transparent: color === buttonColor.TRANSPARENT,
     light: color === buttonColor.LIGHT,
     inverted: color === buttonColor.INVERTED,
@@ -28,7 +28,9 @@ export default {
     }
   },
   methods: {
-
+    click() {
+      this.$emit('click')
+    }
   }
 }
 </script>
@@ -63,28 +65,48 @@ export default {
     background: transparent !important;
     color: $color-white !important;
     font-size: 24px !important;
+
+    &:active {
+      background: $color-red-active !important;
+    }
   }
 
   .light {
     background: $color-white;
     color: $color-black;
     border-color: $color-white;
+
+    &:active {
+      background-color: $color-white-active;
+    }
   }
 
   .transparent {
     background: $color-white;
     border-color: $color-black-025;
+
+    &:active {
+      background-color: $color-white-active !important;
+    }
   }
 
   .primary {
     background: $color-red-600;
     color: $color-white;
     border-color: $color-red-600;
+
+    &:active {
+      background-color: $color-red-active !important;
+    }
   }
 
   .inverted {
     background: $color-white;
     color: $color-red-600;
     border-color: $color-white;
+
+    &:active {
+      background-color: $color-white-active !important;
+    }
   }
 </style>

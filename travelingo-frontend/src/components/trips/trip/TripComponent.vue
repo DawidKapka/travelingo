@@ -1,6 +1,6 @@
 <template>
   <div class="trip" :class="{'activable': status !== tripStatus.PAST}">
-    <div class="header" :class="{'header-upcoming': status === tripStatus.UPCOMING}">
+    <div class="trip-header" :class="{'header-upcoming': status === tripStatus.UPCOMING}">
       <div class="location">
         <h4 class="country">{{country[trip.country]}}<div class="flag"></div></h4>
         <p class="places">
@@ -97,7 +97,7 @@ export default defineComponent({
     justify-content: space-around;
   }
 
-  .header, .country {
+  .trip-header, .country {
     display: flex;
   }
 

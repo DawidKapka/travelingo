@@ -75,6 +75,8 @@ export default defineComponent({
   .dates {
     padding: 32px;
     width: 100%;
+    border-bottom: 1px solid $color-black-025;
+    box-shadow: 0 8px 8px $color-black-025;
 
     .date {
       @include subtitle-dark;
